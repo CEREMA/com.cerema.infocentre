@@ -52,7 +52,7 @@ MyService = {
 // Nouvelle Demande
 	getDepartement: function(o,cb){
 		var db = MyService.using('db');
-		db.model("bpclight","SELECT Kuni,LibUnic FROM unites WHERE archive=0 ORDER BY LibUnic",cb);
+		db.model("bpclight","SELECT Kuni,LibUnic FROM unites WHERE kets=1 and archive=0 ORDER BY LibUnic",cb);
 	},
 	getService: function(o,cb){
 		var db = MyService.using('db');
