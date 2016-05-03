@@ -52,11 +52,11 @@ MyService = {
 // Nouvelle Demande
 	getDepartement: function(o,cb){
 		var db = MyService.using('db');
-		db.model("bpclight","SELECT Kuni,LibUnic FROM unites ORDER BY LibUnic",cb);
+		db.model("bpclight","SELECT Kuni,LibUnic FROM unites WHERE archive=0 ORDER BY LibUnic",cb);
 	},
 	getService: function(o,cb){
 		var db = MyService.using('db');
-		db.model("bpclight",'SELECT LibSubC,Ksub FROM subdis WHERE Kuni = ' + o.kuni + ' ORDER BY LibSubC',cb );
+		db.model("bpclight",'SELECT LibSubC,Ksub FROM subdis WHERE archive=0 and Kuni = ' + o.kuni + ' ORDER BY LibSubC',cb );
 	},
 	getAgent: function(o,cb){
 		var db = MyService.using('db');
