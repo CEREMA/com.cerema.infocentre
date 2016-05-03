@@ -1,0 +1,86 @@
+{
+    "namespace": "com.cerema.infocentre",
+    "git": "https://github.com/CEREMA/com.cerema.infocentre",
+    "title": "Infocentre2016",
+    "description": "Package description goes here",
+    "platform": "desktop",
+    "targets": [
+        "webapp"
+    ],
+    "uid": "f3788651-d7e2-4e8f-a60e-656ad2953afd",
+    "version": "1.00",
+    "build": "0",
+    "copyright": "Copyright (c) 2016 By CEREMA",
+    "license": "BSD",
+    "author": {
+        "name": "XXX",
+        "mail": "xxx@xxx.com",
+        "twitter": "@xxx",
+        "web": "",
+        "github": ""
+    },
+    "team": {
+        "debugger": [],
+        "tester": []
+    },
+    "langs": [
+        "en",
+        "fr"
+    ],
+    "frameworks": [
+        {
+            "name": "ext",
+            "version": "4.2.1",
+            "type": "desktop",
+            "theme": "classic",
+            "src": [
+                "http://cdn.sencha.com/ext/gpl/{version}/ext-all-debug.js"
+            ],
+            "res": [
+                "http://cdn.sencha.com/ext/gpl/{version}/resources/ext-theme-{theme}/ext-theme-{theme}-all.css"
+            ]
+        },
+        {
+            "name": "jquery",
+            "version": "2.0.3",
+            "src": "http://cdnjs.cloudflare.com/ajax/libs/jquery/{version}/jquery.js"
+        }
+    ],
+    "auth": [
+        "CERBERE"
+    ],
+    "paths": {},
+    "controllers": [
+        "CMain"
+    ],
+    "modules": [
+        "Ext.ux.upload"
+    ],
+    "plugins": [],
+    "api": [
+        "MyService"
+    ],
+    "db": [
+        "bpclight",
+        "infocentre"
+    ],
+    "packages": [
+        "exceljs",
+        "knodeo_xlsx"
+    ],
+    "icon": {
+        "background": "#FFFFFF",
+        "file": "app.png"
+    },
+    "splashscreen": {
+        "background": "#FFFFFF",
+        "color": "orange",
+        "file": "app.png"
+    },
+    "server": {
+        "port": 3000
+    },
+    "livereload": {
+        "port": 3030
+    }
+}
