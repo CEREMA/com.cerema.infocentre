@@ -30,21 +30,21 @@
 
 
 /* Progress Bar */
-.progress {
+.progression {
 	border: none;
 	width: 650px;
 	margin: 20px;
 	text-align: center;
 }
-.progress .circle,
-.progress .bar {
+.progression .circle,
+.progression .bar {
 	display: inline-block;
 	background: #fff;
 	width: 40px; height: 40px;
 	border-radius: 40px;
 	border: 1px solid #d5d5da;
 }
-.progress .bar {
+.progression .bar {
 	position: relative;
 	width: 75px;
 	height: 6px;
@@ -55,7 +55,7 @@
 	border-right: none;
 	border-radius: 0;
 }
-.progress .circle .label {
+.progression .circle .label {
 	display: inline-block;
 	width: 32px;
 	height: 32px;
@@ -65,7 +65,7 @@
 	color: #b5b5ba;
 	font-size: 17px;
 }
-.progress .circle .title {
+.progression .circle .title {
 	color: #b5b5ba;
 	font-size: 13px;
 	line-height: 30px;
@@ -73,26 +73,26 @@
 }
 
 /* Done / Active */
-.progress .bar.done,
-.progress .circle.done {
+.progression .bar.done,
+.progression .circle.done {
 	background: #eee;
 }
-.progress .bar.active {
+.progression .bar.active {
 	background: linear-gradient(to right, #EEE 40%, #FFF 60%);
 }
-.progress .circle.done .label {
+.progression .circle.done .label {
 	color: #FFF;
 	background: #81CE97;
 	box-shadow: inset 0 0 2px rgba(0,0,0,.2);
 }
-.progress .circle.done .title {
+.progression .circle.done .title {
 	color: #444;
 }
-.progress .circle.active .label {
+.progression .circle.active .label {
 	color: #FFF;
 	background: #0c95be;
 	box-shadow: inset 0 0 2px rgba(0,0,0,.2);
 }
-.progress .circle.active .title {
+.progression .circle.active .title {
 	color: #0c95be;
 }
