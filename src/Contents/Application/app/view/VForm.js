@@ -333,7 +333,7 @@ App.view.define('VForm',
 							{
 
 								border: false,
-								html: ' <div class="progress">'+
+								html: ' <div class="progression">'+
 											'<div class="circle active">'+
 												'<span class="label">1</span>'+
 												'<span class="title">Demande</span>'+
