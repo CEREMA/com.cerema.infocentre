@@ -432,7 +432,7 @@ App.controller.define('CMain', {
 		        							} 
 
 											// Jquery Progress Bar
-											me.progressionBar(1,data.Etape+1);
+											me.progressBar(1,data.Etape+1);
 
 										} else {
 											$('.progression .circle:nth-of-type(2)').removeClass('active').addClass('done');
@@ -476,7 +476,7 @@ App.controller.define('CMain', {
             Etape: 2,
             Declasser: 0
         }, function(e,r) {
-        	me.progressionBar(2,3);
+        	me.progressBar(2,3);
         	me.ChangeValueEtape(2);
         	$('.declasser').css('color','#444');
 			$('.declasser').html('Declasser');
@@ -505,7 +505,7 @@ App.controller.define('CMain', {
             IdDemande: me.IdDemandeSelected,
             Etape: 3
         }, function(e,r) {
-        	me.progressionBar(3,4);
+        	me.progressBar(3,4);
         	me.ChangeValueEtape(3);
         	me.Step3();
         });
@@ -516,7 +516,7 @@ App.controller.define('CMain', {
             IdDemande: me.IdDemandeSelected,
             Etape: 4
         }, function(e,r) {
-        	me.progressionBar(4,5);
+        	me.progressBar(4,5);
         	me.ChangeValueEtape(4);
         	me.Step4();
         });
@@ -527,7 +527,7 @@ App.controller.define('CMain', {
             IdDemande: me.IdDemandeSelected,
             Etape: 5
         }, function(e,r) {
-        	me.progressionBar(5,6);
+        	me.progressBar(5,6);
         	me.ChangeValueEtape(5);
         	me.Step5();
         });
@@ -538,7 +538,7 @@ App.controller.define('CMain', {
             IdDemande: me.IdDemandeSelected,
             Etape: 6
         }, function(e,r) {
-        	me.progressionBar(6,7);
+        	me.progressBar(6,7);
         	me.ChangeValueEtape(6);
         	App.get('VForm button#btnCloture').hide();
         	App.get('grid#ListPrincipal').getStore().load();
