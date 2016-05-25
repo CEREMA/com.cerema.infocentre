@@ -432,12 +432,12 @@ App.controller.define('CMain', {
 		        							} 
 
 											// Jquery Progress Bar
-											me.ProgressBar(1,data.Etape+1);
+											me.progressionBar(1,data.Etape+1);
 
 										} else {
-											$('.progress .circle:nth-of-type(2)').removeClass('active').addClass('done');
-											$('.progress .circle:nth-of-type(1)').removeClass('active').addClass('done');
-											$('.progress .bar:nth-of-type(1)').addClass('done');
+											$('.progression .circle:nth-of-type(2)').removeClass('active').addClass('done');
+											$('.progression .circle:nth-of-type(1)').removeClass('active').addClass('done');
+											$('.progression .bar:nth-of-type(1)').addClass('done');
 											$('.declasser').css('color','red');
 											$('.declasser').html('Declasser');
 											if(G_LawManager([1])){
@@ -458,11 +458,11 @@ App.controller.define('CMain', {
 	ProgressBar: function(i,count){
 		setInterval(function() {
 			if(i <= count){
-				$('.progress .circle:nth-of-type(' + i + ')').addClass('active');
-				$('.progress .circle:nth-of-type(' + (i - 1) + ')').removeClass('active').addClass('done');
-				$('.progress .circle:nth-of-type(' + (i - 1) + ') .label').html('&#10003;');
-				$('.progress .bar:nth-of-type(' + (i - 1) + ')').addClass('active');
-				$('.progress .bar:nth-of-type(' + (i - 2) + ')').removeClass('active').addClass('done');
+				$('.progression .circle:nth-of-type(' + i + ')').addClass('active');
+				$('.progression .circle:nth-of-type(' + (i - 1) + ')').removeClass('active').addClass('done');
+				$('.progression .circle:nth-of-type(' + (i - 1) + ') .label').html('&#10003;');
+				$('.progression .bar:nth-of-type(' + (i - 1) + ')').addClass('active');
+				$('.progression .bar:nth-of-type(' + (i - 2) + ')').removeClass('active').addClass('done');
 				i++;
 			}
 		}, 80);
@@ -476,7 +476,7 @@ App.controller.define('CMain', {
             Etape: 2,
             Declasser: 0
         }, function(e,r) {
-        	me.ProgressBar(2,3);
+        	me.progressionBar(2,3);
         	me.ChangeValueEtape(2);
         	$('.declasser').css('color','#444');
 			$('.declasser').html('Declasser');
@@ -491,9 +491,9 @@ App.controller.define('CMain', {
             IdDemande: me.IdDemandeSelected,
             Declasser: 1
         }, function(e,r) {
-        	$('.progress .circle:nth-of-type(2)').removeClass('active').addClass('done');
-			$('.progress .circle:nth-of-type(1)').removeClass('active').addClass('done');
-			$('.progress .bar:nth-of-type(1)').addClass('done');
+        	$('.progression .circle:nth-of-type(2)').removeClass('active').addClass('done');
+			$('.progression .circle:nth-of-type(1)').removeClass('active').addClass('done');
+			$('.progression .bar:nth-of-type(1)').addClass('done');
 			$('.declasser').css('color','red');
 			$('.declasser').html('Declasser');
         	App.get('VForm button#btnDeclasser').hide();
@@ -505,7 +505,7 @@ App.controller.define('CMain', {
             IdDemande: me.IdDemandeSelected,
             Etape: 3
         }, function(e,r) {
-        	me.ProgressBar(3,4);
+        	me.progressionBar(3,4);
         	me.ChangeValueEtape(3);
         	me.Step3();
         });
@@ -516,7 +516,7 @@ App.controller.define('CMain', {
             IdDemande: me.IdDemandeSelected,
             Etape: 4
         }, function(e,r) {
-        	me.ProgressBar(4,5);
+        	me.progressionBar(4,5);
         	me.ChangeValueEtape(4);
         	me.Step4();
         });
@@ -527,7 +527,7 @@ App.controller.define('CMain', {
             IdDemande: me.IdDemandeSelected,
             Etape: 5
         }, function(e,r) {
-        	me.ProgressBar(5,6);
+        	me.progressionBar(5,6);
         	me.ChangeValueEtape(5);
         	me.Step5();
         });
@@ -538,7 +538,7 @@ App.controller.define('CMain', {
             IdDemande: me.IdDemandeSelected,
             Etape: 6
         }, function(e,r) {
-        	me.ProgressBar(6,7);
+        	me.progressionBar(6,7);
         	me.ChangeValueEtape(6);
         	App.get('VForm button#btnCloture').hide();
         	App.get('grid#ListPrincipal').getStore().load();
