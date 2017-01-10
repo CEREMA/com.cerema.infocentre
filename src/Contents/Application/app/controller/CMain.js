@@ -258,6 +258,8 @@ App.controller.define('CMain', {
 			
 			App.get('VMain combo#Year').bindStore(store);
 			
+			App.get('VMain combo#Year').setValue(currentyear);
+			
 			console.log(Auth.User);
 			// Gestion des droits.
 			var lawUser = Auth.User.profil;
