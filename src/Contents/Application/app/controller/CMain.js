@@ -106,6 +106,7 @@ App.controller.define('CMain', {
 			App.DB.post('infocentre://demandes',tab,function(ra){
 				App.notify('Vos enregistrements ont bien été copiés.');
 				App.get("VMain grid").getStore().load();
+				me.up('window').close();
 			})
 		});
 	},
