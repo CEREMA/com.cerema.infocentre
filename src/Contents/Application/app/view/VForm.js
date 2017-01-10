@@ -19,14 +19,14 @@ App.view.define('VForm',
 				itemId: "nCopy",
 				labelField: "Copier",
 				width: 100,
-				hidden: false				
+				hidden: true				
 			},
 			{
 				xtype: "button",
 				itemId: "btnCopy",
 				text: "Dupliquer",
 				iconCls: "ico-duplicate",
-				hidden: false				
+				hidden: true				
 			},			
 			{
 				xtype: "button",
