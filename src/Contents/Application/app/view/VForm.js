@@ -280,7 +280,7 @@ App.view.define('VForm',
 							{
 								xtype: "textarea",
 								itemId: "txtDemande",
-								fieldLabel: "Détails complémentaires de la demande",
+								fieldLabel: "Expression du besoin",
 								labelAlign: "top",
 								flex: 1,
 								margin: {
