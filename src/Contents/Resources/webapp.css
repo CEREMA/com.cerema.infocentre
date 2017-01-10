@@ -7,20 +7,20 @@
 {
 	background-image:url(startup/logo.png);
 	background-repeat:no-repeat;
-	background-position:center center;	
+	background-position:center center;
 	background-size: 128px 128px;
 	width: 128px;
-	height: 128px;	
+	height: 128px;
 }
 
 .qxIcon
 {
 	background-image:url(webapp/ico.png);
 	background-repeat:no-repeat;
-	background-position:center center;	
+	background-position:center center;
 	background-size: 16px 16px;
 	width: 16px;
-	height: 16px;	
+	height: 16px;
 }
 
 .mnu_preferences
@@ -95,4 +95,9 @@
 }
 .progression .circle.active .title {
 	color: #0c95be;
+}
+
+.ico-duplicate {
+	background-image:url(webapp/copy-icon.png);
+	background-size: contain;
 }
