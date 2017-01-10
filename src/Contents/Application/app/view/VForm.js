@@ -68,19 +68,19 @@ App.view.define('VForm',
 			{
 				xtype: "button",
 				itemId: "btnEnregistrer",
-				text: "Enregistrer",
+				text: "<b>Enregistrer</b>",
 				hidden: true
 			},			
 			{
 				xtype: "button",
 				itemId: "btnMaj",
-				text: "Mise à jour",
+				text: "<b>Mise à jour</b>",
 				hidden: true
 			},			
 			{
 				xtype: "button",
 				itemId: "btnCloture",
-				text: "Clôturer",
+				text: "<b>Clôturer</b>",
 				hidden: true
 			}
 		],
