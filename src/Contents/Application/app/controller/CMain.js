@@ -33,6 +33,9 @@ App.controller.define('CMain', {
 			"menu>menuitem": {
 				click: "Menu_onClick"
 			},
+			"VForm": {
+				show: "VFormShow"	
+			},
 			"VForm combo": {
 				change: "AbilitytoRecord"
 			},
@@ -92,6 +95,10 @@ App.controller.define('CMain', {
 		
 		App.init('VMain',this.onLoad);
 		
+	},
+	VFormShow: function(me) {
+		console.log(me);
+		alert("x");	
 	},
 	MkImport: function(){
 		App.info.loading('Chargement');
