@@ -357,10 +357,7 @@ App.controller.define('CMain', {
 		App.MyService.GenerateDemande(record.data.IdDemande,function(e, r){
 			if(e.success){
 	        	var data = e.data[0];	        	
-	        	if (data.Etape<2) {
-					App.get('VForm button#btnCopy').show();
-					App.get('VForm numberfield#nCopy').show();
-				}
+
 
 	        	App.info.loading('Chargement');
 	        	App.view.create('VForm',{
@@ -368,7 +365,12 @@ App.controller.define('CMain', {
 					title: 'Auteur de la Demande : ' + data.NomPre,
 					labels:[]
 				}).show();
-
+	        	
+				if (data.Etape<2) {
+					App.get('VForm button#btnCopy').show();
+					App.get('VForm numberfield#nCopy').show();
+				};
+				
 	        	App.get('combo#cboDepartement').getStore().load(function(r){
 	        		App.get('VForm combo#cboDepartement').select(data.IdKuni);
 		    		App.get('combo#cboService').getStore().load(function(r){
