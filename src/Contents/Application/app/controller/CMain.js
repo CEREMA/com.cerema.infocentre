@@ -357,12 +357,13 @@ App.controller.define('CMain', {
 			if(e.success){
 	        	var data = e.data[0];	        	
 				
-				console.log(data);
+				
 
 	        	App.info.loading('Chargement');
 	        	App.view.create('VForm',{
 					modal: true,
 					title: 'Auteur de la Demande : ' + data.NomPre,
+					IdDemande: data.IdDemande,
 					labels:[]
 				}).show();
 	        	
