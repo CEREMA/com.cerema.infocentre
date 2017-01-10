@@ -25,7 +25,7 @@ App.view.define('VForm',
 				xtype: "button",
 				itemId: "btnCopy",
 				text: "Dupliquer",
-				icoCls: "ico-duplicate",
+				iconCls: "ico-duplicate",
 				hidden: false				
 			},			
 			{
