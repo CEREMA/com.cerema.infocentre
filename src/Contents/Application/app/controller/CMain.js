@@ -61,6 +61,9 @@ App.controller.define('CMain', {
 			"VMain grid#ListPrincipal": {
 				itemdblclick: "SelectDemande"
 			},
+			"VMain combo#Year": {
+				select: "YearSelect"	
+			},
 			"VForm button#btnMaj": {
 				click: "Update"
 			},
@@ -95,6 +98,11 @@ App.controller.define('CMain', {
 		
 		App.init('VMain',this.onLoad);
 		
+	},
+	YearSelect: function() {
+		var s=App.get('VMain combo#Year').getValue();
+		App.get('VMain grid').getStore().getProxy().extraParams.year=s;
+		App.get('VMain grid').getStore().load();
 	},
 	CopyDemande: function(me) {
 		var demande=me.up('window').IdDemande;
