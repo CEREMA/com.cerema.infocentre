@@ -13,7 +13,20 @@ App.view.define('VForm',
 		title: 'Infocentre',
 		bodyStyle:'padding:5px 5px 0',
 		bbar: 
-		[				
+		[			
+			{
+				xtype: "numberfield",
+				itemId: "nCopy",
+				labelField: "Copier",
+				width: 100,
+				hidden: false				
+			},
+			{
+				xtype: "button",
+				itemId: "btnCopy",
+				labelField: "Dupliquer",
+				hidden: false				
+			},			
 			{
 				xtype: "button",
 				itemId: "btnDeclasser",
