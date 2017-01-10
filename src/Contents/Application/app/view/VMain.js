@@ -140,6 +140,7 @@ App.view.define('VMain', {
 						tbar:[
 							{
 								xtype: "combo",
+								itemId: "Year",
 								padding: 4,
 								fieldLabel: "Année",
 								store: App.store.create({fields:["year"],data:[{year:"2015"},{year:"2016"},{year:"2017"}]}),
