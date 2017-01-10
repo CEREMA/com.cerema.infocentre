@@ -137,7 +137,14 @@ App.view.define('VMain', {
 							ftype: 'groupingsummary'
 						}
 					],		
-						tbar:[],
+						tbar:[
+							{
+								xtype: "combo",
+								store: App.store.create({fields:["year"],data:["2015","2016","2017"]}),
+								displayField: "year",
+								valueField: "year"
+							}
+						],
 						columns:[										
 							{
 								flex: 1,
