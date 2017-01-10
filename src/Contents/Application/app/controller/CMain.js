@@ -273,7 +273,10 @@ App.controller.define('CMain', {
 			store.getProxy().extraParams.Priorite = Priorite;
 			if(!G_LawManager([1,2])) {
 				store.getProxy().extraParams.kuni = Auth.User.kuni;
-			}
+			};
+			
+			store.getProxy().extraParams.year=currentyear;
+			
 			store.on('load',function(){
 				var models = App.get('VMain grid#ListPrincipal').getStore().getRange();
 				for(var i = 0 ; i < models.length ; i++){
