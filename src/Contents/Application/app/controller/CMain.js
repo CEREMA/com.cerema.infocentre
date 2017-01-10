@@ -244,7 +244,20 @@ App.controller.define('CMain', {
 	},
 	onLoad: function() {
 		Auth.login(function(){
-
+			var dd=new Date();
+			var currentyear=dd.getFullYear();
+			var ddtab=[];
+			ddtab.push({year: currentyear-1});
+			ddtab.push({year: currentyear});
+			ddtab.push({year: currentyear+1});
+			
+			var store=App.store.create({
+				fields: ["year"],
+				data: ddtab
+			});
+			
+			App.get('VMain combo#Year').bindStore(store);
+			
 			console.log(Auth.User);
 			// Gestion des droits.
 			var lawUser = Auth.User.profil;
