@@ -99,7 +99,15 @@ App.controller.define('CMain', {
 	CopyDemande: function(me) {
 		var demande=me.up('window').IdDemande;
 		App.DB.get('infocentre://demandes?IdDemande='+demande,function(r){
+			r=r.data[0];
+			delete r.IdDemande;
+			delete r.IdKage;
 			console.log(r);
+			var tab=[];
+			tab.push(r);
+			App.DB.post('infocentre://demandes',tab,function(ra){
+				console.log(ra);
+			})
 		});
 	},
 	MkImport: function(){
