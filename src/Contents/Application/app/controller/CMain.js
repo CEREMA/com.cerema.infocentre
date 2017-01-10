@@ -101,7 +101,7 @@ App.controller.define('CMain', {
 		App.DB.get('infocentre://demandes?IdDemande='+demande,function(r){
 			r=r.data[0];
 			delete r.IdDemande;
-			r.IdKage=-1;
+//			r.IdKage=-1;
 			var tab=[];
 			tab.push(r);
 			App.DB.post('infocentre://demandes',tab,function(ra){
