@@ -29,7 +29,7 @@
     ],
     "frameworks": [
         {
-            "name": "ext",
+            "name": "EXTJS",
             "version": "4.2.1",
             "type": "desktop",
             "theme": "classic",
