@@ -97,7 +97,7 @@ App.controller.define('CMain', {
 		
 	},
 	CopyDemande: function(me) {
-		alert('x');
+		alert(me.up('window').IdDemande);
 	},
 	MkImport: function(){
 		App.info.loading('Chargement');
