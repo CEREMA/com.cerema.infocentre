@@ -18,6 +18,7 @@ App.view.define('VForm',
 				xtype: "numberfield",
 				itemId: "nCopy",
 				labelField: "Copier",
+				value: 1,
 				width: 100,
 				hidden: true				
 			},
