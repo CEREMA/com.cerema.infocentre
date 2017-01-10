@@ -145,7 +145,8 @@ App.view.define('VMain', {
 								fieldLabel: "Année",
 								store: App.store.create({fields:["year"],data:[{year:"2015"},{year:"2016"},{year:"2017"}]}),
 								displayField: "year",
-								valueField: "year"
+								valueField: "year",
+								editable: false
 							}
 						],
 						columns:[										
