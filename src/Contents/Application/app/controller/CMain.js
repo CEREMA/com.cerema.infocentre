@@ -34,7 +34,7 @@ App.controller.define('CMain', {
 				click: "Menu_onClick"
 			},
 			"VForm button#btnCopy": {
-				show: "CopyDemande"	
+				click: "CopyDemande"	
 			},
 			"VForm combo": {
 				change: "AbilitytoRecord"
