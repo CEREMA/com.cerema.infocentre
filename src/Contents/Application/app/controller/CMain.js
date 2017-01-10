@@ -357,7 +357,10 @@ App.controller.define('CMain', {
 		App.MyService.GenerateDemande(record.data.IdDemande,function(e, r){
 			if(e.success){
 	        	var data = e.data[0];	        	
-	        	console.log(data);
+	        	if (data.Etape<2) {
+					App.get('VForm button#btnCopy').show();
+					App.get('VForm numberfield#nCopy').show();
+				}
 
 	        	App.info.loading('Chargement');
 	        	App.view.create('VForm',{
