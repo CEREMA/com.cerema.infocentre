@@ -101,11 +101,11 @@ App.controller.define('CMain', {
 		App.DB.get('infocentre://demandes?IdDemande='+demande,function(r){
 			r=r.data[0];
 			delete r.IdDemande;
-//			r.IdKage=-1;
 			var tab=[];
-			tab.push(r);
+			for (var i=0;i<App.get('VForm numberfield#nCopy').getValue();i++) tab.push(r);
 			App.DB.post('infocentre://demandes',tab,function(ra){
-				console.log(ra);
+				App.notify('Vos enregistrements ont bien été copiés.');
+				App.get("VMain grid").getStore().load();
 			})
 		});
 	},
