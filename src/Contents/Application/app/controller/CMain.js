@@ -97,7 +97,10 @@ App.controller.define('CMain', {
 		
 	},
 	CopyDemande: function(me) {
-		alert(me.up('window').IdDemande);
+		var demande=me.up('window').IdDemande;
+		App.DB.get('infocentre://demandes?IdDemande='+demande,function(r){
+			console.log(r);
+		});
 	},
 	MkImport: function(){
 		App.info.loading('Chargement');
