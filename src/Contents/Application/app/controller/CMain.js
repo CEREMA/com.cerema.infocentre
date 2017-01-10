@@ -356,7 +356,8 @@ App.controller.define('CMain', {
 		App.MyService.GenerateDemande(record.data.IdDemande,function(e, r){
 			if(e.success){
 	        	var data = e.data[0];	        	
-
+				
+				console.log(data);
 
 	        	App.info.loading('Chargement');
 	        	App.view.create('VForm',{
