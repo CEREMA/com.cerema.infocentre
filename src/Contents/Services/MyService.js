@@ -21,6 +21,8 @@ MyService = {
 			where += " AND id.Priorite != \'PP\'";
 		}
 		
+		where += " AND YEAR(DateDemande)="+o.year;
+		
 		where = ' WHERE' + where;
 
 		var db = MyService.using('db');
