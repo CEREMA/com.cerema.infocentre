@@ -209,7 +209,7 @@ App.view.define('VMain', {
 								text: "A faire",
 								dataIndex: "UsageCollectif",
 								renderer: function(value) {
-									if (value) return ('1'); else return ('0');
+									if (value) return ('<div style="background-color:red">1</div>'); else return ('<div style="background-color:black"></div>');
 								}
 								/*listeners: {
 									checkchange: function(me) {
