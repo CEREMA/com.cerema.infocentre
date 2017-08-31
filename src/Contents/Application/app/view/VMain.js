@@ -204,6 +204,11 @@ App.view.define('VMain', {
 							},
 							{
 								flex: 1,
+								text: "A faire",
+								dataIndex: "cbUsage"
+							},							
+							{
+								flex: 1,
 								xtype: 'checkcolumn',
 								text: "Spe",
 								dataIndex: "CreditSpecifique",
