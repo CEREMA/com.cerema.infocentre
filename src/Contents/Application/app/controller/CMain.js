@@ -561,13 +561,13 @@ App.controller.define('CMain', {
             Declasser: 1,
 			Etpae: 1
         }, function(e,r) {
-        	$('.progression .circle:nth-of-type(3)').removeClass('active').addClass('done');
+        	$('.progression .circle:nth-of-type(3)').removeClass('active').removeClass('done');
         	$('.progression .circle:nth-of-type(2)').removeClass('active').addClass('done');
 			$('.progression .circle:nth-of-type(1)').removeClass('active').addClass('done');
 			$('.progression .bar:nth-of-type(1)').addClass('done');
 			$('.declasser').css('color','red');
 			$('.declasser').html('Abandonné');
-        	//App.get('VForm').close();
+        	App.get('VForm button#btnAbandon').hide();
         });		
 	},
 	Command: function(obj){
