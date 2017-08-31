@@ -566,7 +566,7 @@ App.controller.define('CMain', {
 			$('.progression .bar:nth-of-type(1)').addClass('done');
 			$('.declasser').css('color','red');
 			$('.declasser').html('Declasser');
-        	me.up('window').hide();
+        	//App.get('VForm').close();
         });		
 	},
 	Command: function(obj){
