@@ -494,7 +494,7 @@ App.controller.define('CMain', {
 											$('.progression .circle:nth-of-type(1)').removeClass('active').addClass('done');
 											$('.progression .bar:nth-of-type(1)').addClass('done');
 											$('.declasser').css('color','red');
-											$('.declasser').html('Declasser');
+											$('.declasser').html('Déclasser');
 											if(G_LawManager([1])){
 												App.get('VForm button#btnValider').idDemande = data.IdDemande;
 												App.get('VForm button#btnValider').show();
@@ -534,7 +534,7 @@ App.controller.define('CMain', {
         	me.Progressbar(2,3);
         	me.ChangeValueEtape(2);
         	$('.declasser').css('color','#444');
-			$('.declasser').html('Declasser');
+			$('.declasser').html('Déclasser');
         	App.get('VForm button#btnValider').hide();
 			App.get('VForm button#btnDeclasser').hide();
 			me.Step2();
@@ -566,7 +566,7 @@ App.controller.define('CMain', {
 			$('.progression .circle:nth-of-type(1)').removeClass('active').addClass('done');
 			$('.progression .bar:nth-of-type(1)').addClass('done');
 			$('.declasser').css('color','red');
-			$('.declasser').html('Déclasser');
+			$('.declasser').html('Abandonné');
         	//App.get('VForm').close();
         });		
 	},
