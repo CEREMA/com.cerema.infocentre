@@ -39,6 +39,7 @@ MyService = {
 								", id.DateValidation"+
 								", id.Etape"+
 								", id.CreditSpecifique"+
+				 				", id.UsageCollectif"+
 								", si.LibelleSousNature "+
 								"FROM infocentre.demandes id "+
 								"JOIN bpclight.agents ba ON ba.Kage = id.IdKage "+
