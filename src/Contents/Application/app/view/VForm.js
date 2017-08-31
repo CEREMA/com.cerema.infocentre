@@ -33,7 +33,7 @@ App.view.define('VForm',
 				xtype: "button",
 				itemId: "btnDeclasser",
 				text: "Sans suite",
-				hidden: true
+				hidden: false
 			},				
 			{
 				xtype: "button",
