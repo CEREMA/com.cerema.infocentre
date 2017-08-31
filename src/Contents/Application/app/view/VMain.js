@@ -205,7 +205,10 @@ App.view.define('VMain', {
 							{
 								flex: 1,
 								text: "A faire",
-								dataIndex: "UsageCollectif"
+								dataIndex: "UsageCollectif",
+								renderer: function(value) {
+									if (value==true) return ('<div style="background-color:red"></div>'); else return ('<div style="background-color:black"></div>');
+								}
 							},							
 							{
 								flex: 1,
