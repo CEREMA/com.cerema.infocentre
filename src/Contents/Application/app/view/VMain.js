@@ -210,7 +210,7 @@ App.view.define('VMain', {
 								listeners: {
 									checkchange: function(me) {
 										var row = me.up('grid').getSelectionModel().getSelection()[0];
-										console.log(row.data.idDemande);
+										console.log(row);
 									}
 								}
 							},							
