@@ -204,15 +204,11 @@ App.view.define('VMain', {
 							},
 							{
 								flex: 1,
-								//xtype: 'checkcolumn',
 								text: "A faire",
 								dataIndex: "UsageCollectif",
-								html: "yes"
-								/*listeners: {
-									checkchange: function(me) {
-										console.log(me.getValue());
-									}
-								}*/
+								renderer: function(value) {
+									if (value) return ('<div style="background-color:red"></div>'); else return ('<div style="background-color:black"></div>');
+								}
 							},							
 							{
 								flex: 1,
