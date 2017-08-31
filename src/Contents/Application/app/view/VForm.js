@@ -38,6 +38,7 @@ App.view.define('VForm',
 			{
 				xtype: "button",
 				itemId: "btnAbandon",
+				iconCls: "trash",
 				text: "Abandonner",
 				hidden: true
 			},			
