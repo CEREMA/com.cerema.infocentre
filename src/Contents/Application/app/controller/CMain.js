@@ -59,10 +59,7 @@ App.controller.define('CMain', {
 				click: "Cancel"
 			},
 			"VMain grid#ListPrincipal": {
-				itemdblclick: "SelectDemande",
-				edit: function() {
-					alert('bidon');
-				}
+				itemdblclick: "SelectDemande"
 			},
 			"VMain combo#Year": {
 				select: "YearSelect"	
@@ -104,9 +101,6 @@ App.controller.define('CMain', {
 		
 		App.init('VMain',this.onLoad);
 		
-	},
-	GridEdit: function() {
-	alert('bidon');	
 	},
 	YearSelect: function() {
 		var s=App.get('VMain combo#Year').getValue();
