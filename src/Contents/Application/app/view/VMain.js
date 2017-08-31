@@ -131,9 +131,6 @@ App.view.define('VMain', {
 					xtype: "grid",
 					itemId: "ListPrincipal",
 					width: "100%",
-					plugins: {
-                    	ptype: 'cellediting'
-                    },
 					features: [
 						{
 							groupHeaderTpl: 'Département: {name}',
@@ -209,7 +206,12 @@ App.view.define('VMain', {
 								flex: 1,
 								xtype: 'checkcolumn',
 								text: "A faire",
-								dataIndex: "UsageCollectif"
+								dataIndex: "UsageCollectif",
+								listeners: {
+									click: function() {
+										alert('one');
+									}
+								}
 							},							
 							{
 								flex: 1,
