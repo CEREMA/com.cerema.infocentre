@@ -550,7 +550,7 @@ App.controller.define('CMain', {
 			$('.progression .circle:nth-of-type(1)').removeClass('active').addClass('done');
 			$('.progression .bar:nth-of-type(1)').addClass('done');
 			$('.declasser').css('color','red');
-			$('.declasser').html('Declasser');
+			$('.declasser').html('Déclasser');
         	App.get('VForm button#btnDeclasser').hide();
         });
 	},
@@ -565,7 +565,7 @@ App.controller.define('CMain', {
 			$('.progression .circle:nth-of-type(1)').removeClass('active').addClass('done');
 			$('.progression .bar:nth-of-type(1)').addClass('done');
 			$('.declasser').css('color','red');
-			$('.declasser').html('Declasser');
+			$('.declasser').html('Déclasser');
         	//App.get('VForm').close();
         });		
 	},
