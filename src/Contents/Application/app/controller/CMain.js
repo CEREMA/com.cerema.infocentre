@@ -544,21 +544,6 @@ App.controller.define('CMain', {
 		var me = this;
 		App.DB.post('infocentre://demandes',{
             IdDemande: me.IdDemandeSelected,
-            Declasser: 1,
-            Etape: 1
-        }, function(e,r) {
-        	$('.progression .circle:nth-of-type(2)').removeClass('active').addClass('done');
-			$('.progression .circle:nth-of-type(1)').removeClass('active').addClass('done');
-			$('.progression .bar:nth-of-type(1)').addClass('done');
-			$('.declasser').css('color','red');
-			$('.declasser').html('Declasser');
-        	me.up('window').close();
-        });
-	},
-	Abandon: function(obj) {
-		var me = this;
-		App.DB.post('infocentre://demandes',{
-            IdDemande: me.IdDemandeSelected,
             Declasser: 1
         }, function(e,r) {
         	$('.progression .circle:nth-of-type(2)').removeClass('active').addClass('done');
@@ -567,6 +552,21 @@ App.controller.define('CMain', {
 			$('.declasser').css('color','red');
 			$('.declasser').html('Declasser');
         	App.get('VForm button#btnDeclasser').hide();
+        });
+	},
+	Abandon: function(obj) {
+		var me = this;
+		App.DB.post('infocentre://demandes',{
+            IdDemande: me.IdDemandeSelected,
+            Declasser: 1,
+			Etpae: 1
+        }, function(e,r) {
+        	$('.progression .circle:nth-of-type(2)').removeClass('active').addClass('done');
+			$('.progression .circle:nth-of-type(1)').removeClass('active').addClass('done');
+			$('.progression .bar:nth-of-type(1)').addClass('done');
+			$('.declasser').css('color','red');
+			$('.declasser').html('Declasser');
+        	me.up('window').hide();
         });		
 	},
 	Command: function(obj){
