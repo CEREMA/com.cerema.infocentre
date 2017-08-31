@@ -63,7 +63,7 @@ App.view.define('VForm',
 			{
 				xtype: "button",
 				itemId: "btninstall",
-				text: "Installer",
+				text: "Installé",
 				hidden: true
 			},
 			'->',
@@ -88,7 +88,7 @@ App.view.define('VForm',
 			{
 				xtype: "button",
 				itemId: "btnCloture",
-				text: "<b>Clôturer</b>",
+				text: "<b>Clôturé</b>",
 				hidden: true
 			}
 		],
