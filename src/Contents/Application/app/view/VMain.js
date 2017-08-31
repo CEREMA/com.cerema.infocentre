@@ -204,14 +204,18 @@ App.view.define('VMain', {
 							},
 							{
 								flex: 1,
-								xtype: 'checkcolumn',
+								xtype: "panel",
+								//xtype: 'checkcolumn',
 								text: "A faire",
 								dataIndex: "UsageCollectif",
-								listeners: {
+								renderer: function(value) {
+									if (value) return ('1'); else return ('0');
+								}
+								/*listeners: {
 									checkchange: function(me) {
 										console.log(me.getValue());
 									}
-								}
+								}*/
 							},							
 							{
 								flex: 1,
