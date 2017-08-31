@@ -131,6 +131,9 @@ App.view.define('VMain', {
 					xtype: "grid",
 					itemId: "ListPrincipal",
 					width: "100%",
+					plugins: {
+                    	ptype: 'cellediting'
+                    },
 					features: [
 						{
 							groupHeaderTpl: 'Département: {name}',
