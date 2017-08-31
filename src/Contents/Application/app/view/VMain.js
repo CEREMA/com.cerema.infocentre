@@ -207,7 +207,7 @@ App.view.define('VMain', {
 								text: "A faire",
 								dataIndex: "UsageCollectif",
 								renderer: function (value) {
-									if (value) return '<span style="color:red">&nbsp;&nbsp;&nbsp;</span>';
+									if (value==1) return '<span style="color:red">&nbsp;&nbsp;&nbsp;</span>';
 									console.log(value);
 								} 
 							},							
