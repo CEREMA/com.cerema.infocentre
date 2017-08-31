@@ -209,7 +209,7 @@ App.view.define('VMain', {
 								dataIndex: "UsageCollectif",
 								listeners: {
 									checkchange: function(me) {
-										console.log(me);
+										return false;
 									}
 								}
 							},							
