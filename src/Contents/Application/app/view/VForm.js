@@ -474,6 +474,7 @@ App.view.define('VForm',
 									xtype: 'checkbox',
 									itemId: "cbUsage",
 									boxLabel: 'A faire',
+									flex:1 ,
 									inputValue: '1',
 									margin:
 										{
