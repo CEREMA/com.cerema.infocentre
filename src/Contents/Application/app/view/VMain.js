@@ -204,7 +204,6 @@ App.view.define('VMain', {
 							},
 							{
 								flex: 1,
-								xtype: "panel",
 								//xtype: 'checkcolumn',
 								text: "A faire",
 								dataIndex: "UsageCollectif",
