@@ -473,7 +473,7 @@ App.view.define('VForm',
 								{
 									xtype: 'checkbox',
 									itemId: "cbUsage",
-									boxLabel: 'Usage collectif',
+									boxLabel: 'A faire',
 									inputValue: '1',
 									margin:
 										{
