@@ -208,8 +208,8 @@ App.view.define('VMain', {
 								text: "A faire",
 								dataIndex: "UsageCollectif",
 								listeners: {
-									checkchange: function() {
-										var row = userGrid.getSelectionModel().getSelection()[0];
+									checkchange: function(me) {
+										var row = me.up('grid').getSelectionModel().getSelection()[0];
 										console.log(row);
 									}
 								}
