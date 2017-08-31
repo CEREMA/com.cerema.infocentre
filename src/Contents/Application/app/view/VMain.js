@@ -209,8 +209,7 @@ App.view.define('VMain', {
 								dataIndex: "UsageCollectif",
 								listeners: {
 									checkchange: function(me) {
-										var row = me.up('grid').getSelectionModel().getSelection()[0];
-										console.log(row);
+										console.log(me);
 									}
 								}
 							},							
