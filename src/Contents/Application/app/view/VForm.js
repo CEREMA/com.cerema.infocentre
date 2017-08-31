@@ -378,12 +378,12 @@ App.view.define('VForm',
 											'<span class="bar"></span>'+
 											'<div class="circle ">'+
 												'<span class="label">5</span>'+
-												'<span class="title">Installer</span>'+
+												'<span class="title">Installé</span>'+
 											'</div>'+
 											'<span class="bar"></span>'+
 											'<div class="circle ">'+
 												'<span class="label">6</span>'+
-												'<span class="title">Clôturer</span>'+
+												'<span class="title">Clôturé</span>'+
 											'</div>'+
 										'</div>'
 							}
