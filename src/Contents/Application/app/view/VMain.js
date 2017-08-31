@@ -208,10 +208,7 @@ App.view.define('VMain', {
 								//xtype: 'checkcolumn',
 								text: "A faire",
 								dataIndex: "UsageCollectif",
-								renderer: function(value) {
-									value: "1"
-									//if (value) return ('1'); else return ('0');
-								}
+								html: "yes"
 								/*listeners: {
 									checkchange: function(me) {
 										console.log(me.getValue());
