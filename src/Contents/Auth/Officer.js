@@ -18,6 +18,7 @@ Officer = {
 															'JOIN bpclight.agents ba ON ba.Kage = p.IdProfil '+
 															'WHERE ba.Kage = ' + result.data[0].kage,
 						function(err,result) {
+						console.log(err);
 						if(result.data.length > 0){
 							var tmp = [];
 							for(var i = 0 ; i < result.data.length ; i++){
