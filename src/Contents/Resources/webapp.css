@@ -101,3 +101,12 @@
 	background-image:url(webapp/copy-icon.png);
 	background-size: contain;
 }
+
+.trash {
+	background-image:url(webapp/trash1600.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size: 16px 16px;
+	width: 16px;
+	height: 16px;	
+}
