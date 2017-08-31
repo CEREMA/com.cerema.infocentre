@@ -208,7 +208,7 @@ App.view.define('VMain', {
 								text: "A faire",
 								dataIndex: "UsageCollectif",
 								listeners: {
-									click: function() {
+									checkchange: function() {
 										alert('one');
 									}
 								}
