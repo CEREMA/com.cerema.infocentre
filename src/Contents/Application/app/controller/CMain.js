@@ -460,8 +460,10 @@ App.controller.define('CMain', {
 									        		App.get('VForm button#btnValider').show();
 										        	App.get('VForm button#btnDeclasser').show(); 
 												} else if(data.Etape == 2){
+													App.get('VForm button#btnAbandon').show();
 													me.Step2();
 												} else if(data.Etape == 3) {
+													App.get('VForm button#btnAbandon').show();
 													me.Step3();
 												}
 											}
