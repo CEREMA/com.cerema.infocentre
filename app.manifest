@@ -47,7 +47,8 @@
         }
     ],
     "auth": [
-        "CERBERE"
+        "CERBERE",
+        "CEREMA"
     ],
     "paths": {},
     "controllers": [
