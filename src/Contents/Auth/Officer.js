@@ -1,7 +1,7 @@
 Officer = {
 	login : function(profile,auth_type,cb)
 	{
-		if (auth_type=="cas") {
+		//if (auth_type=="cas") {
 			if (!profile.username) cb({});
 			var mail=profile.username.toLowerCase();
 			Officer.using('db').store('bpclight','select kage,nom,prenom,kuni,ksub from agents where kage in (select kage from mela where libmela="'+mail+'")',function(err,result){
@@ -32,7 +32,7 @@ Officer = {
 					});
 				} else cb(err);
 			});
-		};
+		//};
 		
 	}
 };
